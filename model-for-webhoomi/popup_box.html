@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal-box</title>
+    
+    <!--------- css style link ------->>
+    <link rel="stylesheet" href="style.css">
+    <!--------- icon link ------->>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section>
+        <button class="card_button">Join us</button>
+        <div class="card-container">
+            <div class="card">
+                <img class="card_img" src="img.png" alt="">
+                <div class="card_content">
+                    <h1>Start Today</h1>
+                    <p>
+                      Sign up to ensure that you don't miss the next promotion an the other important events in Perssonal Account.?
+                    </p>
+                    <div class="group_btns">
+                        <button class="button">Sign up</button>
+                        <button class="button">Next Time</button>
+                    </div>
+                    <p class="close_btn"><i class='bx bx-x'></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var card_button = document.querySelector('.card_button');
+        var card_container = document.querySelector('.card_container');
+
+        card_button.addEventListener('click', function(){
+            card_container.classList.add('active');
+        })
+    </script>
+</body>
+</html>
